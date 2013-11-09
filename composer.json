@@ -14,9 +14,13 @@
     "support": {
         "issues": "https://github.com/herrera-io/php-phar-update/issues"
     },
+    "repositories": {
+        "type": "vcs",
+        "url": "https://github.com/SpareFoot/php-json.git"
+    },
     "require": {
         "php": ">=5.3.3",
-        "herrera-io/json": "1.*",
+        "sparefoot/json": "^1.0",
         "herrera-io/version": "1.*"
     },
     "require-dev": {
@@ -36,7 +40,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "2.0-dev"
         }
     }
 }
