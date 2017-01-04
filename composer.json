@@ -1,5 +1,5 @@
 {
-    "name": "herrera-io/phar-update",
+    "name": "sparefoot/phar-update",
     "description": "A library for self-updating Phars.",
     "keywords": ["phar", "update"],
     "homepage": "http://herrera-io.github.com/php-phar-update",
@@ -20,7 +20,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "sparefoot/json": "^1.0",
+        "sparefoot/json": "dev-master",
         "herrera-io/version": "1.*"
     },
     "require-dev": {
