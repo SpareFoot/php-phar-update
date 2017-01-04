@@ -88,7 +88,7 @@ class Manager
      * @param boolean        $major    Lock to current major version?
      * @param boolean        $pre      Allow pre-releases?
      *
-     * @return boolean TRUE if an update was performed, FALSE if none available.
+     * @return string|boolean New version string if an update was performed, FALSE if none available.
      */
     public function update($version, $major = false, $pre = false)
     {
@@ -104,7 +104,7 @@ class Manager
             $update->getFile();
             $update->copyTo($this->getRunningFile());
 
-            return true;
+            return $update->getVersion();
         }
 
         return false;
